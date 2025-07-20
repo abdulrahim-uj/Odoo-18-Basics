@@ -30,6 +30,7 @@ class Property(models.Model):
     garden = fields.Boolean(string="Garden", default=False)
     garden_area = fields.Integer(string="Garden Area(Sqm)")
     garden_orientation = fields.Selection(selection=SELECTION_CHOICES, string="Garden Orientation", default="north")
+    offer_ids = fields.One2many('estate.property.offer', 'property_id', string="Offers")
     # id, create_date, create_uid, write_date, write_uid   : odoo default creations
 
 

@@ -41,6 +41,13 @@
                                 <field name="selling_price"/>
                                 <field name="expected_price"/>
                             </group>
+                            <field name="offer_ids">
+                                <list>
+                                    <field name="price"/>
+                                    <field name="partner_id"/>
+                                    <field name="status"/>
+                                </list>
+                            </field>
 <!--                            <field name="description"/>-->
                             <field name="bedrooms"/>
                             <field name="living_area"/>
