@@ -37,5 +37,12 @@
             action="real_estate_ads.property_type_view_action"
             sequence="1"
         />
+        <menuitem
+            id="menu_property_tag"
+            name="Property Tags"
+            parent="menu_property_ads_settings"
+            action="real_estate_ads.property_tag_view_action"
+            sequence="2"
+        />
     </data>
 </odoo>
