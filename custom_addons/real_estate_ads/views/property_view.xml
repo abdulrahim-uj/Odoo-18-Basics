@@ -9,6 +9,7 @@
             <field name="arch" type="xml">
                 <list string="Estate_Property">
                     <field name="name"/>
+                    <field name="tag_ids"/>
                     <field name="type_id"/>
                     <field name="selling_price"/>
                     <field name="best_offer"/>
@@ -29,6 +30,7 @@
                     <sheet>
                         <group>
                             <field name="name"/>
+                            <field name="tag_ids" widget="many2many_tags"/>
                             <group string="">
                                 <field name="type_id"/>
                                 <field name="postcode"/>
