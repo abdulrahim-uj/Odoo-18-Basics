@@ -41,22 +41,41 @@
                                 <field name="selling_price"/>
                                 <field name="expected_price"/>
                             </group>
-                            <field name="offer_ids">
-                                <list>
-                                    <field name="price"/>
-                                    <field name="partner_id"/>
-                                    <field name="status"/>
-                                </list>
-                            </field>
-<!--                            <field name="description"/>-->
-                            <field name="bedrooms"/>
-                            <field name="living_area"/>
-                            <field name="facades"/>
-                            <field name="garage"/>
-                            <field name="garden"/>
-                            <field name="garden_area"/>
-                            <field name="garden_orientation"/>
                         </group>
+                        <!-- TABBED -->
+                        <notebook>
+                            <page string="Description">
+                                <group string="">
+                                    <field name="description"/>
+                                    <field name="bedrooms"/>
+                                    <field name="living_area"/>
+                                    <field name="facades"/>
+                                    <field name="garage"/>
+                                    <field name="garden"/>
+                                    <field name="garden_area"/>
+                                    <field name="garden_orientation"/>
+                                </group>
+                            </page>
+                            <!-- SECOND TAB -->
+                            <page string="Offers">
+                                <field name="offer_ids">
+                                    <list editable="bottom">
+                                        <field name="price"/>
+                                        <field name="partner_id"/>
+                                        <field name="validity"/>
+                                        <field name="deadline"/>
+                                        <field name="status" nolabel="1"/>
+                                    </list>
+                                </field>
+                            </page>
+                            <!-- THIRD TAB -->
+                            <page string="Other Info">
+                                <group string="">
+                                    <field name="sales_id"/>
+                                    <field name="buyer_id"/>
+                                </group>
+                            </page>
+                        </notebook>
                     </sheet>
                 </form>
             </field>
