@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- ROOT MENU -->
+        <!-- THIS IS MODULE OPENER MENU -->
+        <menuitem
+            id="unique_id_menu_root"
+            name="Property Ads"
+            web_icon="real_estate_ads, static/description/icon.png"
+        />
+
+        <!-- SUBMENU UNDER ROOT -->
+        <!-- THIS IS MODULE NAVBAR MENU -->
+        <menuitem
+            id="menu_property_ads"
+            name="Real Estate Ads"
+            parent="unique_id_menu_root"
+        />
+        <menuitem
+            id="menu_property_ads_settings"
+            name="Settings"
+            parent="unique_id_menu_root"
+        />
+        <!-- ACTION MENU ITEM -->
+        <!-- THIS IS MODULE NAVBAR DROPDOWN OPTION MENU -->
+        <menuitem
+            id="menu_property"
+            name="Property"
+            parent="menu_property_ads"
+            action="real_estate_ads.action_property"
+            sequence="1"
+        />
+        <menuitem
+            id="menu_property_type"
+            name="Property Types"
+            parent="menu_property_ads_settings"
+            action="real_estate_ads.property_type_view_action"
+            sequence="1"
+        />
+    </data>
+</odoo>
