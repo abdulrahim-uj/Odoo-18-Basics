@@ -1,0 +1,9 @@
+"id","name"
+property_type_house, House
+property_type_apartment, Apartment
+property_type_1bhk, 1 BHK
+property_type_2bhk, 2 BHK
+property_type_3bhk, 3 BHK
+property_type_5bhk, 5 BHK
+property_type_penthouse, Penthouse
+property_type_castle, Castle
