@@ -16,8 +16,8 @@
         "views/property_tag_view.xml",
         "views/menu_items.xml",
         # DATA FILES
-        "data/property_type.xml",
-        # "data/estate.property.type.csv",
+        # "data/property_type.xml",
+        "data/estate.property.type.csv",
     ],
     "installable": True,
     "application": True,
