@@ -20,7 +20,8 @@
         "data/estate.property.type.csv",
     ],
     "demo": [
-        "demo/property_tag.xml",
+        # "demo/property_tag.xml",
+        "demo/estate.property.tag.csv",
     ],
     "installable": True,
     "application": True,

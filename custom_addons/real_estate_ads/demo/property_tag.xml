@@ -9,7 +9,7 @@
         <record id="property_tag_new" model="estate.property.tag">
             <field name="name">New</field>
         </record>
-        <record id="property_tag_abandoned" model="estate.property.tag">
+            <record id="property_tag_abandoned" model="estate.property.tag">
             <field name="name">Abandoned</field>
         </record>
     </data>
